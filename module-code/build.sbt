@@ -2,7 +2,7 @@ import play.Project._
 
 name := "securesocial"
 
-version := "master-SNAPSHOT"
+version := "servicero-CUSTOM"
 
 libraryDependencies ++= Seq(
   cache,
