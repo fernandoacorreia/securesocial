@@ -44,6 +44,7 @@ object Registration extends Controller {
   val providerId = UsernamePasswordProvider.UsernamePassword
   val UserNameAlreadyTaken = "securesocial.signup.userNameAlreadyTaken"
   val PasswordsDoNotMatch = "securesocial.signup.passwordsDoNotMatch"
+  val PasswordResetCheckEmail = "securesocial.password.resetCheckEmail"
   val ThankYouCheckEmail = "securesocial.signup.thankYouCheckEmail"
   val InvalidLink = "securesocial.signup.invalidLink"
   val SignUpDone = "securesocial.signup.signUpDone"
@@ -268,7 +269,7 @@ object Registration extends Controller {
             Mailer.sendUnkownEmailNotice(email)
           }
         }
-        Redirect(onHandleStartResetPasswordGoTo).flashing(Success -> Messages(ThankYouCheckEmail))
+        Redirect(onHandleStartResetPasswordGoTo).flashing(Success -> Messages(PasswordResetCheckEmail))
       }
     )
   }
