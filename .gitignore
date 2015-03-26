@@ -19,3 +19,5 @@ eclipse
 *.iml
 *.ipr
 *.iws
+/module-code/.sbtopts
+/samples/scala/demo/.sbtopts
