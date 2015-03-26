@@ -2,7 +2,7 @@ import play.Project._
 
 name := "SecureSocial"
 
-version := "2.1.4"
+version := "2.1.5-ldap-SNAPSHOT"
 
 libraryDependencies ++= Seq(
   cache,
@@ -62,4 +62,3 @@ pomExtra := (
 scalacOptions := Seq("-feature", "-deprecation")
 
 playScalaSettings
-
